@@ -65,7 +65,7 @@ defprotocol Bamboo.Formatter do
 
   @type opts :: %{optional(:type) => :from | :to | :cc | :bcc}
 
-  @spec format_email_address(any, opts) :: Bamboo.Email.address() | Bamboo.Email.address_list()
+  @spec format_email_address(any, opts) :: Bamboo.Email.address_list()
   def format_email_address(data, opts)
 end
 
